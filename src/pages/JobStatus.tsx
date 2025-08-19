@@ -10,8 +10,7 @@ import { useToast } from '@/hooks/use-toast';
 import { jobService } from '@/lib/jobService';
 import StatusBadge from '@/components/StatusBadge';
 import MolecularBackground from '@/components/MolecularBackground';
-import Navigation from '@/components/Navigation';
-import { RefreshCw, X, Clock, Eye } from 'lucide-react';
+import { ArrowLeft, RefreshCw, X, Clock, Eye } from 'lucide-react';
 import { Job } from '@/lib/jobService';
 
 const JobStatus: React.FC = () => {
@@ -100,15 +99,29 @@ const JobStatus: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background relative">
-      <Navigation />
       <MolecularBackground intensity="light" />
       
       <div className="relative z-10 container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <div>
-            <h1 className="text-3xl font-bold">{job.name}</h1>
-            <p className="text-muted-foreground">Job Status & Progress</p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+            <Button asChild variant="ghost" size="sm" className="self-start">
+              <Link to="/jobs">
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Back to Jobs
+              </Link>
+            </Button>
+            <div className="flex items-center gap-4">
+              <img 
+                src="/lovable-uploads/85ff6cb2-f21e-49a1-9a52-13a6ff2a50ff.png" 
+                alt="Atomera Logo" 
+                className="h-8"
+              />
+              <div>
+                <h1 className="text-3xl font-bold">{job.name}</h1>
+                <p className="text-muted-foreground">Job Status & Progress</p>
+              </div>
+            </div>
           </div>
           
           <div className="flex items-center gap-2">
