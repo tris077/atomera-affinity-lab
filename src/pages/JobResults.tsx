@@ -37,16 +37,23 @@ const JobResults: React.FC = () => {
       <div className="relative z-10 container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center gap-4">
-            <Button asChild variant="ghost" size="sm">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+            <Button asChild variant="ghost" size="sm" className="self-start">
               <Link to="/jobs">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to Jobs
               </Link>
             </Button>
-            <div>
-              <h1 className="text-3xl font-bold">{job.name}</h1>
-              <p className="text-muted-foreground">Binding Affinity Results</p>
+            <div className="flex items-center gap-4">
+              <img 
+                src="/lovable-uploads/549aceab-dcdc-4240-906d-f0022bf3ffb3.png" 
+                alt="Atomera Logo" 
+                className="h-8"
+              />
+              <div>
+                <h1 className="text-3xl font-bold">{job.name}</h1>
+                <p className="text-muted-foreground">Binding Affinity Results</p>
+              </div>
             </div>
           </div>
           

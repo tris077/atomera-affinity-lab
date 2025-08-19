@@ -74,9 +74,16 @@ const JobsList: React.FC = () => {
       <div className="relative z-10 container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
-          <div>
-            <h1 className="text-3xl font-bold">Jobs</h1>
-            <p className="text-muted-foreground">Manage your binding affinity analyses</p>
+          <div className="flex items-center gap-4">
+            <img 
+              src="/lovable-uploads/549aceab-dcdc-4240-906d-f0022bf3ffb3.png" 
+              alt="Atomera Logo" 
+              className="h-8"
+            />
+            <div>
+              <h1 className="text-3xl font-bold">Jobs</h1>
+              <p className="text-muted-foreground">Manage your binding affinity analyses</p>
+            </div>
           </div>
           
           <div className="flex gap-2">

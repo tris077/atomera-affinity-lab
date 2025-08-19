@@ -17,9 +17,13 @@ const Landing: React.FC = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Brand */}
             <div className="space-y-4">
-              <h1 className="text-6xl md:text-8xl font-bold gradient-primary bg-clip-text text-transparent molecular-float">
-                Atomera
-              </h1>
+              <div className="flex items-center justify-center gap-4 molecular-float">
+                <img 
+                  src="/lovable-uploads/549aceab-dcdc-4240-906d-f0022bf3ffb3.png" 
+                  alt="Atomera Logo" 
+                  className="h-16 md:h-20"
+                />
+              </div>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
                 Predict binding affinity. Explore protein–ligand interactions.
               </p>
@@ -120,9 +124,13 @@ const Landing: React.FC = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold gradient-primary bg-clip-text text-transparent">
-                Atomera
-              </h3>
+              <div className="flex items-center gap-2">
+                <img 
+                  src="/lovable-uploads/549aceab-dcdc-4240-906d-f0022bf3ffb3.png" 
+                  alt="Atomera Logo" 
+                  className="h-6"
+                />
+              </div>
               <p className="text-sm text-muted-foreground">
                 Advanced molecular interaction prediction platform
               </p>
