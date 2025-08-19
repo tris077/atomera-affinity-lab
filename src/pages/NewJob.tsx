@@ -10,8 +10,8 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 import { useToast } from '@/hooks/use-toast';
 import { jobService } from '@/lib/jobService';
 import MolecularBackground from '@/components/MolecularBackground';
-import { Upload, FileText, ArrowLeft, Play } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Navigation from '@/components/Navigation';
+import { Upload, FileText, Play } from 'lucide-react';
 
 const NewJob: React.FC = () => {
   const navigate = useNavigate();
@@ -91,28 +91,14 @@ const NewJob: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background relative">
+      <Navigation />
       <MolecularBackground intensity="light" />
       
       <div className="relative z-10 container mx-auto px-4 py-8">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
-          <Button asChild variant="ghost" size="sm" className="self-start">
-            <Link to="/jobs">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Jobs
-            </Link>
-          </Button>
-          <div className="flex items-center gap-4">
-            <img 
-              src="/lovable-uploads/85ff6cb2-f21e-49a1-9a52-13a6ff2a50ff.png" 
-              alt="Atomera Logo" 
-              className="h-8"
-            />
-            <div>
-              <h1 className="text-3xl font-bold">Create New Job</h1>
-              <p className="text-muted-foreground">Set up a new binding affinity prediction</p>
-            </div>
-          </div>
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold">Create New Job</h1>
+          <p className="text-muted-foreground">Set up a new binding affinity prediction</p>
         </div>
 
         <form onSubmit={handleSubmit} className="max-w-4xl mx-auto space-y-8">
