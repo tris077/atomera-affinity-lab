@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import MolecularBackground from '@/components/MolecularBackground';
+import Navigation from '@/components/Navigation';
 import { Upload, Zap, BarChart3, ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/molecular-hero.png';
 
 const Landing: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden">
         <MolecularBackground intensity="medium" />
         
         <div className="relative z-10 container mx-auto px-4 text-center">
