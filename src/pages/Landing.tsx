@@ -21,7 +21,7 @@ const Landing: React.FC = () => {
                 <img 
                   src="/lovable-uploads/85ff6cb2-f21e-49a1-9a52-13a6ff2a50ff.png" 
                   alt="Atomera Logo" 
-                  className="h-24 md:h-32"
+                  className="h-32 md:h-48"
                 />
               </div>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
