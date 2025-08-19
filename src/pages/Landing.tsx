@@ -19,7 +19,7 @@ const Landing: React.FC = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-center gap-4 molecular-float">
                 <img 
-                  src="/lovable-uploads/549aceab-dcdc-4240-906d-f0022bf3ffb3.png" 
+                  src="/lovable-uploads/85ff6cb2-f21e-49a1-9a52-13a6ff2a50ff.png" 
                   alt="Atomera Logo" 
                   className="h-16 md:h-20"
                 />
@@ -126,7 +126,7 @@ const Landing: React.FC = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <img 
-                  src="/lovable-uploads/549aceab-dcdc-4240-906d-f0022bf3ffb3.png" 
+                  src="/lovable-uploads/85ff6cb2-f21e-49a1-9a52-13a6ff2a50ff.png" 
                   alt="Atomera Logo" 
                   className="h-6"
                 />
